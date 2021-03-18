@@ -1,3 +1,4 @@
+<h1 class="title"></h1>
 <p>
   <b>Title：</b><%= @book.title %>
 </p>
@@ -5,5 +6,9 @@
 <p>
   <b>Body:</b><%= @book.body %>
 </p>
-<%= link_to "Edit", edit_books_path(@book.id) %>
-<%= link_to "Back", "/books" %>
+<nav>
+    <ul class = "nav-list">
+        <li class = "nav-list-item"><%= link_to "Edit", edit_books_path(@book.id) %></li>
+        <li class = "nav-list-item"><%= link_to "Back", "/books" %></li>
+    </ul>
+</nav>
