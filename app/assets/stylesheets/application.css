@@ -69,3 +69,9 @@ tr{
 .item{
   margin: 10px 30px;
 }
+.notice{
+  margin: 0px 30px;
+}
+.alert{
+  margin: 0px 30px;
+}
