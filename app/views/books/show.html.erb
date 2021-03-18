@@ -1,14 +1,14 @@
-<h1 class="title"></h1>
-<p>
-  <b>Title：</b><%= @book.title %>
-</p>
+<h1 class="title"> </h1>
 
-<p>
-  <b>Body:</b><%= @book.body %>
-</p>
-<nav>
-    <ul class = "nav-list">
-        <li class = "nav-list-item"><%= link_to "Edit", edit_books_path(@book.id) %></li>
-        <li class = "nav-list-item"><%= link_to "Back", "/books" %></li>
-    </ul>
-</nav>
+<div class ="show-item">
+  <b>Title：</b><%= @book.title %>
+</div>
+
+<div class ="show-item">
+  <b>Body : </b><%= @book.body %>
+</div>
+
+<div class = "nav">
+    <div class = "nav1"><%= link_to "Edit", edit_books_path(@book.id) %></div>
+    <div class = "nav2"><%= link_to "Back", "/books" %></div>
+</div>

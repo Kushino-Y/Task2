@@ -26,12 +26,17 @@
 </main>
 
 <div class="sub-title">New book</div>
-<%= form_with model:@book, local:true do |f| %>
 
-  <h4>Title</h4>
+<%= form_with model:@book, local:true do |f| %>
+<div class = "item">
+  <h5>Title</h5>
   <%= f.text_field :title %>
-  
-  <h4>Body</h4>
+</div>
+<div class = "item">
+  <h5>Body</h5>
   <%= f.text_area :body %>
+</div>
+<div class = "item">
   <%= f.submit 'Create Book' %>
+</div>
 <% end %>

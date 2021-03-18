@@ -47,13 +47,25 @@ tr{
   padding: 30px;
 }
 .sub-title {
+  margin: 30px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
 }
-.nav-list{
+.nav{
+  display: flex;
   margin: 30px;
 }
-.nav-list-item{
-  list-style: none
-  border-left: medium solid;
+.nav1{
+  padding-right: 5px;
+}
+.nav2{
+   padding-left: 5px;
+  border-left: 1px solid;
+}
+.show-item{
+  margin: 30px;
+}
+.item{
+  margin: 10px 30px;
 }

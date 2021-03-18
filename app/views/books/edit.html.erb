@@ -1,15 +1,21 @@
  <h1 class="title">Editing Book</h1>
 
-<%= form_with model:@book, local: true do |f| %>
-  <h4>Title</h4>
-  <%= f.text_field :title %>
-  <h4>Body</h4></h4>
-  <%= f.text_area :body %>
-  <%= f.submit 'Update Book' %>
-<% end %>
-<nav>
-    <u class = "nav-list">
-        <li class = "nav-list-item"><%= link_to "Show", "/books/#{@book.id}" %></li>
-        <li class = "nav-list-item"><%= link_to "Back", "/books" %></li>
-    </ul>
-</nav>
+    <%= form_with model:@book, local: true do |f| %>
+    <div class = "item">
+        <h4>Title</h4>
+        <%= f.text_field :title %>
+    </div>
+    <div class= "item">
+        <h4>Body</h4>
+        <%= f.text_area :body %>
+    </div>
+    <div class= "item">
+        <%= f.submit 'Update Book' %>
+    </div>
+    <% end %>
+</div>
+<div class = "nav">
+    <div class = "nav1"><%= link_to "Show", "/books/#{@book.id}" %></div>
+    <div class = "nav2"><%= link_to "Back", "/books" %></div>
+</div>
+   
